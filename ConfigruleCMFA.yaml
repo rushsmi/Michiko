@@ -31,9 +31,10 @@ dns:
     - 8.8.8.8
     - 1.1.1.1
     - 112.215.203.254
+    - 104.18.53.42
 proxies: 
   - name: (gosenn)
-    server: stripchat.page
+    server: 104.18.53.42
     port: 443
     type: vless
     uuid: 26f30c01-39ce-4a29-840f-267fc6205c8a
@@ -149,4 +150,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
