@@ -51,16 +51,15 @@ proxies:
   - name: (enemy)
     server: grabacademyportal.grab.com
     port: 443
-    type: vmess
+    type: vless
     uuid: d855dff3-36dd-4886-847c-ae3abdcf1ff1
-    alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: 02.wci.web.id
     network: ws
     ws-opts:
-      path: /vmess-ws
+      path: /vless-ws
       headers:
         Host: 02.wci.web.id
     udp: true
@@ -149,6 +148,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
