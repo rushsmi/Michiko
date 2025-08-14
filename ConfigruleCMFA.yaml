@@ -48,20 +48,20 @@ proxies:
       headers:
         Host: d03.biz.id
     udp: true
-  - name: (enemy)
+  - name: (rusdhi)
     server: grabacademyportal.grab.com
     port: 443
     type: vless
-    uuid: d855dff3-36dd-4886-847c-ae3abdcf1ff1
+    uuid: ea448132-c05f-4699-a7be-64cca55962d1
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: 02.wci.web.id
+    servername: d03.biz.id
     network: ws
     ws-opts:
       path: /vless-ws
       headers:
-        Host: 02.wci.web.id
+        Host: d03.biz.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -148,6 +148,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
