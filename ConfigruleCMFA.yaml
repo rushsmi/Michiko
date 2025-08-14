@@ -34,23 +34,23 @@ dns:
     - 104.18.53.42
 proxies: 
   - name: (gosenn)
-    server: stripchat.page
+    server: grabacademyportal.grab.com
     port: 443
     type: vless
     uuid: 26f30c01-39ce-4a29-840f-267fc6205c8a
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: stripchat.page.d03.biz.id
+    servername: d03.biz.id
     network: ws
     ws-opts:
       path: /vless-ws
       headers:
-        Host: stripchat.page.d03.biz.id
+        Host: d03.biz.id
     udp: true
   
   - name: (ganesha)
-    server: stripchat.page
+    server: grabacademyportal.grab.com
     port: 443
     type: vmess
     uuid: 73111500-430e-42fe-9c28-c50161ed7b5a
@@ -58,12 +58,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: stripchat.page.db05.wcid.biz.id
+    servername: db05.wcid.biz.id
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: stripchat.page.db05.wcid.biz.id
+        Host: db05.wcid.biz.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -150,6 +150,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
