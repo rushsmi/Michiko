@@ -49,21 +49,18 @@ proxies:
         Host: d03.biz.id
     udp: true
   
-  - name: (ganesha)
+  - name: (enemy)
     server: grabacademyportal.grab.com
     port: 443
-    type: vmess
-    uuid: 73111500-430e-42fe-9c28-c50161ed7b5a
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: d855dff3-36dd-4886-847c-ae3abdcf1ff1
     skip-cert-verify: true
-    servername: db05.wcid.biz.id
+    sni: 02.wci.web.id
     network: ws
     ws-opts:
-      path: /vmess-ws
+      path: /trojan-ws
       headers:
-        Host: db05.wcid.biz.id
+        Host: 02.wci.web.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -150,6 +147,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
