@@ -48,17 +48,19 @@ proxies:
       headers:
         Host: d03.biz.id
     udp: true
-  
   - name: (enemy)
     server: grabacademyportal.grab.com
     port: 443
-    type: trojan
-    password: d855dff3-36dd-4886-847c-ae3abdcf1ff1
+    type: vmess
+    uuid: d855dff3-36dd-4886-847c-ae3abdcf1ff1
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: 02.wci.web.id
+    servername: 02.wci.web.id
     network: ws
     ws-opts:
-      path: /trojan-ws
+      path: /vmess-ws
       headers:
         Host: 02.wci.web.id
     udp: true
@@ -147,6 +149,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
